@@ -93,7 +93,7 @@ h2.title { font-size: 72px; font-weight: 700; line-height: 1.1; color: var(--nav
 .tbl-note { font-size: 24px; color: var(--muted); margin-top: 28px; }
 
 /* bloqueos */
-.blocks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.blocks { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
 .block { background: var(--navy-2); border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 16px; border-top: 8px solid var(--amarillo); }
 .block .lbl { font-size: 24px; font-weight: 700; letter-spacing: 2px; color: var(--amarillo); }
 .block h3 { font-size: 44px; font-weight: 700; color: #FAFAFD; line-height: 1.1; }

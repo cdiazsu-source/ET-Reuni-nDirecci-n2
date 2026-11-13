@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reunión Dirección–Coordinación · Estrategias Tecnológicas (UIFCE)</title>
+<meta name="description" content="Presentación quincenal de Estrategias Tecnológicas para la reunión Dirección–Coordinación de la UIFCE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="presentacion/deck.css">
+<style>
+  html, body { margin: 0; height: 100%; background: #0F1330; overflow: hidden; font-family: 'Roboto', Arial, sans-serif; }
+  #v-stage { position: absolute; left: 50%; top: 50%; width: 1920px; height: 1080px; transform-origin: 0 0; background: #fff; }
+  #v-stage section { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+  #v-stage aside { display: none; }
+  #v-stage p, #v-stage h1, #v-stage h2, #v-stage h3 { margin: 0; }
+  #v-stage hr { border: 0; margin: 0; height: 0; width: 100%; }
+  #v-stage table { border-collapse: collapse; }
+  #v-stage .tbl th, #v-stage .tbl td { text-align: left; padding: 16px 20px; border-bottom: 2px solid #D5D9EC; }
+  #v-stage x-shape { display: block; }
+  #v-stage x-shape[kind="ellipse"] { border-radius: 50%; }
+  #v-stage x-icon { display: inline-block; }
+  #v-ui { position: fixed; right: 14px; bottom: 12px; display: flex; gap: 6px; align-items: center; z-index: 5; opacity: .55; transition: opacity .2s; }
+  #v-ui:hover, #v-ui:focus-within { opacity: 1; }
+  #v-ui button { font: 500 15px 'Roboto', Arial, sans-serif; color: #fff; background: #262E6B; border: 1px solid #49689F; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+  #v-ui button:hover { background: #49689F; }
+  #v-ui span { color: #C1C6E4; font: 500 15px 'Roboto', Arial, sans-serif; min-width: 52px; text-align: center; }
+  #v-notes { position: fixed; left: 0; right: 0; bottom: 0; max-height: 40%; overflow: auto; background: rgba(15,19,48,.96); color: #EEF0F9; font: 400 18px/1.5 'Roboto', Arial, sans-serif; padding: 18px 28px 56px; z-index: 4; display: none; border-top: 3px solid #F5C518; }
+  #v-notes.on { display: block; }
+  #v-msg { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; color: #C1C6E4; font: 400 20px/1.5 'Roboto', Arial, sans-serif; padding: 24px; }
+</style>
+</head>
+<body>
+<div id="v-stage" aria-live="polite"></div>
+<div id="v-msg">Cargando presentación…</div>
+<div id="v-notes" role="region" aria-label="Notas del presentador"></div>
+<div id="v-ui">
+  <button id="v-prev" aria-label="Diapositiva anterior">‹</button>
+  <span id="v-count">–</span>
+  <button id="v-next" aria-label="Diapositiva siguiente">›</button>
+  <button id="v-nbtn" title="Notas del presentador (N)">Notas</button>
+  <button id="v-full" title="Pantalla completa (F)">Pantalla completa</button>
+</div>
+<script>
+(function () {
+  // Las imágenes de las diapositivas se referencian como /_blob/<id> en el editor de diseño;
+  // aquí se resuelven a los archivos del repositorio.
+  var IMG = {
+    '/_blob/4a986445da0487c67aa0a69c1173c5e8': 'contexto/mascota/uifce-mascota.png',
+    '/_blob/34e8e33a9e551484ecd35115c6119c27': 'contexto/logos/areas/png/uifce-estrategias-tecnologicas-blanco.png'
+  };
+  var ICON = 'M12 2a10 10 0 100 20 10 10 0 000-20zm-1.2 14.2L6.6 12l1.4-1.4 2.8 2.8 5.2-5.2 1.4 1.4-6.6 6.6z';
+  customElements.define('x-icon', class extends HTMLElement {
+    connectedCallback() {
+      if (this.firstChild) return;
+      this.innerHTML = '<svg viewBox="0 0 24 24" width="100%" height="100%" fill="currentColor" aria-hidden="true"><path d="' + ICON + '"/></svg>';
+    }
+  });
+
+  var stage = document.getElementById('v-stage'), msg = document.getElementById('v-msg'),
+      notes = document.getElementById('v-notes'), count = document.getElementById('v-count');
+  var slides = [], cur = 0;
+
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    stage.style.transform = 'translate(' + (-960 * s) + 'px,' + (-540 * s) + 'px) scale(' + s + ')';
+  }
+  function show(i) {
+    if (!slides.length) return;
+    cur = Math.max(0, Math.min(slides.length - 1, i));
+    var sec = slides[cur].node.cloneNode(true);
+    stage.replaceChildren(sec);
+    stage.style.counterReset = 'page ' + cur;
+    notes.textContent = slides[cur].notes || 'Esta diapositiva no tiene notas.';
+    count.textContent = (cur + 1) + ' / ' + slides.length;
+    try { history.replaceState(null, '', '#' + (cur + 1)); } catch (e) {}
+    document.title = 'Reunión Dirección–Coordinación · ' + (cur + 1) + '/' + slides.length;
+  }
+  function next() { show(cur + 1); }
+  function prev() { show(cur - 1); }
+  function fullscreen() {
+    if (document.fullscreenElement) document.exitFullscreen();
+    else document.documentElement.requestFullscreen && document.documentElement.requestFullscreen();
+  }
+  function toggleNotes() { notes.classList.toggle('on'); }
+
+  document.getElementById('v-prev').onclick = prev;
+  document.getElementById('v-next').onclick = next;
+  document.getElementById('v-full').onclick = fullscreen;
+  document.getElementById('v-nbtn').onclick = toggleNotes;
+  addEventListener('resize', fit);
+  addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var k = e.key;
+    if (k === 'ArrowRight' || k === 'PageDown' || k === ' ' || k === 'Enter') { e.preventDefault(); next(); }
+    else if (k === 'ArrowLeft' || k === 'PageUp' || k === 'Backspace') { e.preventDefault(); prev(); }
+    else if (k === 'Home') show(0);
+    else if (k === 'End') show(slides.length - 1);
+    else if (k === 'f' || k === 'F') fullscreen();
+    else if (k === 'n' || k === 'N') toggleNotes();
+  });
+  stage.addEventListener('click', function (e) {
+    var r = stage.getBoundingClientRect();
+    (e.clientX - r.left) < r.width / 3 ? prev() : next();
+  });
+  var x0 = null;
+  addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0; x0 = null;
+    if (Math.abs(dx) > 40) dx < 0 ? next() : prev();
+  });
+
+  fit();
+  fetch('presentacion/deck.json').then(function (r) { return r.json(); }).then(function (deck) {
+    return Promise.all(deck.order.map(function (id) {
+      return fetch('presentacion/slides/' + id + '.html').then(function (r) { return r.text(); });
+    }));
+  }).then(function (htmls) {
+    htmls.forEach(function (h) {
+      var t = document.createElement('template'); t.innerHTML = h;
+      var sec = t.content.querySelector('section'); if (!sec) return;
+      sec.querySelectorAll('img').forEach(function (img) {
+        var s = img.getAttribute('src'); if (IMG[s]) img.setAttribute('src', IMG[s]);
+      });
+      var a = sec.querySelector('aside');
+      slides.push({ node: sec, notes: a ? a.textContent.trim() : '' });
+    });
+    msg.remove();
+    var n = parseInt((location.hash || '').slice(1), 10);
+    show(isNaN(n) ? 0 : n - 1);
+  }).catch(function () {
+    msg.textContent = 'No se pudo cargar la presentación. Ábrela desde un servidor web (por ejemplo, GitHub Pages), no desde el archivo local.';
+  });
+})();
+</script>
+</body>
+</html>
