@@ -1,0 +1,188 @@
+{
+  "unidad": {
+    "nombre": "UIFCE",
+    "nombreLargo": "Unidad de Informática de la Facultad de Ciencias Económicas",
+    "institucion": "Universidad Nacional de Colombia · Sede Bogotá",
+    "promesa": "Tecnología que impulsa la docencia, el aprendizaje y la gestión de la Facultad.",
+    "mision": "Somos el aliado tecnológico de la Facultad de Ciencias Económicas: formamos, acompañamos y desarrollamos soluciones para que profesores, estudiantes, dependencias y personal administrativo aprovechen la tecnología en su día a día.",
+    "serviciosGenerales": ["Soporte técnico", "Apoyos académicos", "Cursos libres", "Microtalleres y eventos", "Blog y proyectos de estudio", "Desarrollo y automatizaciones"],
+    "hashtag": "#UIFCE"
+  },
+  "areas": [
+    {
+      "slug": "apoyos-academicos",
+      "nombre": "Apoyos Académicos",
+      "publico": ["Profesores", "Personal administrativo"],
+      "publicoValidado": true,
+      "quienEres": "Soy profesor o hago parte del personal administrativo",
+      "lema": "Llevamos la herramienta a tu clase.",
+      "propuesta": "Profesores y personal administrativo eligen la herramienta y nosotros la enseñamos a su grupo o equipo, de forma presencial o virtual, articulada con los contenidos de la asignatura o del proceso.",
+      "beneficios": [
+        "Tus estudiantes aprenden la herramienta aplicada a tu asignatura, sin que tengas que preparar el taller.",
+        "Sesiones presenciales o virtuales, agendadas en la fecha y el espacio que necesitas.",
+        "Un catálogo de 32 herramientas en 5 líneas temáticas."
+      ],
+      "servicios": [
+        { "titulo": "Gestión y sistemas empresariales", "detalle": "Odoo, SAP, Siigo, World Office, Bizagi y Trello para la práctica de administración, contabilidad y gestión." },
+        { "titulo": "Análisis de datos y BI", "detalle": "Excel, Google Sheets, Access, MySQL, PostgreSQL, Power BI, Tableau y Looker Studio." },
+        { "titulo": "Econometría y programación", "detalle": "Python, RStudio, STATA y MATLAB para econometría, modelación y ciencia de datos." },
+        { "titulo": "Investigación y escritura académica", "detalle": "Word, LaTeX, Zotero, Mendeley, NVivo y QGIS para redactar, referenciar y analizar." },
+        { "titulo": "Docencia y herramientas digitales", "detalle": "Moodle, Zoom, Microsoft Teams, Google Workspace, H5P, Articulate, Mind Manager e IA." }
+      ],
+      "comoSolicitar": ["Elige la herramienta.", "Diligencia el formulario de solicitud.", "Agenda la fecha y el espacio."],
+      "condiciones": "Solicítalo con dos semanas de anticipación. Máximo cinco apoyos por materia al semestre.",
+      "cta": "Solicita un apoyo académico",
+      "ctaUrl": "",
+      "mensajeClave": "Profe: llevamos la herramienta a tu clase. Estudiante: ¡díselo a tu profe!"
+    },
+    {
+      "slug": "cursos-libres",
+      "nombre": "Cursos Libres",
+      "publico": ["Estudiantes"],
+      "publicoValidado": true,
+      "quienEres": "Soy estudiante",
+      "lema": "Habilidades digitales que se notan en tu hoja de vida.",
+      "propuesta": "Una oferta de cursos por niveles para que los estudiantes desarrollen las competencias tecnológicas que pide el mercado laboral, con certificado para compartir en LinkedIn.",
+      "beneficios": [
+        "Certificado al finalizar, listo para compartir en LinkedIn.",
+        "Rutas por niveles (inicial, intermedio y avanzado) en 6 líneas de formación.",
+        "Puedes tomar cursos sin seguir toda la línea, siempre que cumplas los requisitos."
+      ],
+      "servicios": [
+        { "titulo": "Análisis de datos y Business Intelligence", "detalle": "Del manejo de hojas de cálculo a tableros de BI." },
+        { "titulo": "Programación y ciencia de datos", "detalle": "Lenguajes y técnicas para analizar datos económicos." },
+        { "titulo": "Sistemas empresariales y contables", "detalle": "ERP y software contable usados en las organizaciones." },
+        { "titulo": "Bases de datos", "detalle": "Diseño, consulta y gestión de bases de datos." },
+        { "titulo": "Software estadístico e investigación", "detalle": "Herramientas para el trabajo cuantitativo y la investigación." },
+        { "titulo": "Herramientas académicas", "detalle": "Productividad y escritura para la vida universitaria." }
+      ],
+      "comoSolicitar": ["Revisa la oferta del semestre y sus requisitos.", "Inscríbete en el curso de tu nivel.", "Termina el curso y comparte tu certificado."],
+      "condiciones": "Requisito tipo I: haber aprobado el curso previo. Requisito tipo II: haberlo aprobado o estar cursándolo.",
+      "cta": "Descubre los cursos del semestre",
+      "ctaUrl": "",
+      "mensajeClave": "Descubre los cursos que tenemos preparados para ti. #UIFCECursosLibres"
+    },
+    {
+      "slug": "virtualizacion-academica",
+      "nombre": "Virtualización Académica",
+      "publico": ["Dependencias de la Facultad", "Comunidad académica de posgrado"],
+      "publicoValidado": true,
+      "quienEres": "Represento una dependencia o un programa de posgrado",
+      "lema": "Tus programas y procesos, disponibles en cualquier lugar.",
+      "propuesta": "Acompañamos a las dependencias y a los programas de posgrado en llevar sus cursos, contenidos y herramientas a entornos virtuales de calidad, para que su oferta llegue a más personas sin depender del aula o del equipo físico.",
+      "beneficios": [
+        "Cursos y contenidos de posgrado disponibles en línea, con diseño pensado para el aprendizaje virtual.",
+        "Software académico accesible sin instalarlo en cada equipo.",
+        "Acompañamiento de principio a fin: del diagnóstico al lanzamiento."
+      ],
+      "servicios": [
+        { "titulo": "Aulas virtuales", "detalle": "Montaje y acompañamiento de cursos en plataformas como Moodle." },
+        { "titulo": "Contenidos interactivos", "detalle": "Recursos digitales con H5P y Articulate para cursos y procesos." },
+        { "titulo": "Software virtualizado", "detalle": "Acceso remoto a herramientas académicas, como Excel virtualizado." },
+        { "titulo": "Acompañamiento a dependencias", "detalle": "Virtualización de procesos, capacitaciones y eventos de las dependencias." }
+      ],
+      "comoSolicitar": ["Cuéntanos qué programa, curso o proceso quieres virtualizar.", "Definimos juntos el alcance y el cronograma.", "Producimos, probamos y lanzamos."],
+      "condiciones": "",
+      "cta": "Agenda una reunión de diagnóstico",
+      "ctaUrl": "",
+      "mensajeClave": "Llevamos tu programa a la virtualidad, con calidad académica."
+    },
+    {
+      "slug": "estrategias-tecnologicas",
+      "nombre": "Estrategias Tecnológicas",
+      "publico": ["Comunidad universitaria en general"],
+      "publicoValidado": true,
+      "quienEres": "Hago parte de la comunidad universitaria",
+      "lema": "Conectamos a la comunidad con la tecnología de la Facultad.",
+      "propuesta": "Diseñamos la estrategia y la comunicación que acercan los servicios tecnológicos de la UIFCE a toda la comunidad universitaria: campañas, contenidos, eventos y la identidad de marca de la Unidad.",
+      "beneficios": [
+        "Información clara y oportuna sobre los servicios y novedades tecnológicas.",
+        "Eventos, microtalleres y contenidos para estar al día con la tecnología.",
+        "Una imagen coherente de la UIFCE en todos los canales."
+      ],
+      "servicios": [
+        { "titulo": "Campañas y lanzamientos", "detalle": "Piezas para pantallas, redes sociales y carteleras de cada área." },
+        { "titulo": "Blog y proyectos de estudio", "detalle": "Contenidos y noticias de tecnología para la comunidad." },
+        { "titulo": "Microtalleres y eventos", "detalle": "Espacios cortos para conocer y probar nuevas tecnologías." },
+        { "titulo": "Marca e identidad UIFCE", "detalle": "Logos, animaciones y lineamientos para que todas las áreas comuniquen igual." }
+      ],
+      "comoSolicitar": ["Envía el brief de tu pieza o campaña.", "Acordamos mensaje, canales y fechas.", "Producimos y publicamos."],
+      "condiciones": "",
+      "cta": "Sigue nuestros canales",
+      "ctaUrl": "",
+      "mensajeClave": "Toda la tecnología de la Facultad, en un solo lugar."
+    },
+    {
+      "slug": "desarrollo-automatizaciones-ti",
+      "nombre": "Desarrollo & Automatizaciones TI",
+      "publico": ["Dependencias y áreas administrativas"],
+      "publicoValidado": false,
+      "quienEres": "Necesito automatizar un proceso o un aplicativo",
+      "lema": "Menos tareas manuales, más tiempo para lo importante.",
+      "propuesta": "Desarrollamos aplicativos y automatizaciones que simplifican los procesos de la Facultad, como la programación de salas y aulas, para que cada equipo trabaje con información confiable y en menos tiempo.",
+      "beneficios": [
+        "Procesos repetitivos automatizados y con menos errores.",
+        "Aplicativos a la medida de las necesidades de la Facultad.",
+        "Información centralizada para tomar mejores decisiones."
+      ],
+      "servicios": [
+        { "titulo": "Aplicativos a la medida", "detalle": "Herramientas como el aplicativo de programación de aulas y salas." },
+        { "titulo": "Automatización de procesos", "detalle": "Flujos que eliminan tareas manuales entre formularios, hojas y correos." },
+        { "titulo": "Integración de datos", "detalle": "Conexión de fuentes de información y tableros para seguimiento." }
+      ],
+      "comoSolicitar": ["Describe el proceso y el problema.", "Evaluamos viabilidad y prioridad.", "Desarrollamos, probamos y entregamos."],
+      "condiciones": "",
+      "cta": "Propón un proceso para automatizar",
+      "ctaUrl": "",
+      "mensajeClave": "Si lo haces a mano todas las semanas, podemos automatizarlo."
+    },
+    {
+      "slug": "gestion-del-conocimiento",
+      "nombre": "Gestión del Conocimiento",
+      "publico": ["Equipo UIFCE", "Áreas de la Facultad"],
+      "publicoValidado": false,
+      "quienEres": "Busco guías, tutoriales o capacitación interna",
+      "lema": "Lo que sabemos, documentado y al alcance de todos.",
+      "propuesta": "Documentamos y organizamos el conocimiento de la Unidad (guías, tutoriales, procedimientos y capacitaciones internas) para que nada dependa de una sola persona y cada área encuentre rápido lo que necesita.",
+      "beneficios": [
+        "Guías y tutoriales para resolver dudas frecuentes sin esperar.",
+        "Capacitación interna continua del equipo, por ejemplo en IA generativa.",
+        "Continuidad de los servicios aunque cambien las personas."
+      ],
+      "servicios": [
+        { "titulo": "Guías y tutoriales", "detalle": "Material paso a paso, como «Cómo pedir un apoyo académico»." },
+        { "titulo": "Capacitación interna", "detalle": "Formación del equipo en nuevas herramientas." },
+        { "titulo": "Base de conocimiento", "detalle": "Procedimientos y lecciones aprendidas en un solo lugar." }
+      ],
+      "comoSolicitar": ["Cuéntanos qué tema necesitas documentar o aprender.", "Construimos la guía o la sesión.", "La publicamos en la base de conocimiento."],
+      "condiciones": "",
+      "cta": "Consulta la base de conocimiento",
+      "ctaUrl": "",
+      "mensajeClave": "Lo aprendemos una vez, lo compartimos siempre."
+    },
+    {
+      "slug": "coordinacion",
+      "nombre": "Coordinación",
+      "publico": ["Directivas de la Facultad", "Aliados", "Equipo UIFCE"],
+      "publicoValidado": false,
+      "quienEres": "Quiero hablar con la UIFCE como unidad",
+      "lema": "Un solo punto de contacto para toda la Unidad.",
+      "propuesta": "Articulamos las áreas de la UIFCE, priorizamos las solicitudes y garantizamos que cada servicio se entregue con calidad y a tiempo, como interlocutor de la Unidad ante las directivas y los aliados.",
+      "beneficios": [
+        "Un interlocutor único para solicitudes que involucran varias áreas.",
+        "Planeación y seguimiento de los compromisos de la Unidad.",
+        "Visión de conjunto de los servicios y sus resultados."
+      ],
+      "servicios": [
+        { "titulo": "Planeación y priorización", "detalle": "Agenda semestral de la Unidad y priorización de solicitudes." },
+        { "titulo": "Articulación entre áreas", "detalle": "Asignación de cada solicitud al área responsable." },
+        { "titulo": "Seguimiento e informes", "detalle": "Indicadores y resultados para las directivas." }
+      ],
+      "comoSolicitar": ["Escríbenos tu necesidad.", "La asignamos al área responsable.", "Hacemos seguimiento hasta la entrega."],
+      "condiciones": "",
+      "cta": "Contacta a la coordinación",
+      "ctaUrl": "",
+      "mensajeClave": "Una Unidad, siete áreas, un solo equipo."
+    }
+  ]
+}
