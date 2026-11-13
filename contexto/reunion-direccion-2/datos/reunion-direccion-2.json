@@ -1,0 +1,55 @@
+{
+  "reunion": {
+    "nombre": "Reunión de dirección 2",
+    "tipo": "DIRECCION",
+    "fecha": "2026-10-30",
+    "hora_colombia": "08:00",
+    "zona_horaria": "America/Bogota"
+  },
+  "nota_sobre_los_datos": "Las secciones salen del tablero «Reunión coordinación» de ET en Marcha, con el estado de los proyectos al 13 de noviembre de 2026 (no al día de la reunión). No incluye nombres de personas, enlaces de edición ni la infografía de puntualidad (reglas internas).",
+  "secciones": {
+    "entregamos": [
+      { "proyecto": "Elaboración de piezas gráficas de Cursos Libres — Lanzamiento especial", "categoria": "Articulación con Cursos Libres", "estado": "COMPLETADO", "subtareas": "6/6" },
+      { "proyecto": "Red Ejecutiva ET: alianzas estratégicas y proyectos con empresas líderes", "categoria": "Alianzas y comunidad", "estado": "EN_CURSO", "subtareas": "0/7" },
+      { "proyecto": "Infografía sobre actualización de reglas de puntualidad en la UIFCE", "categoria": "Articulación con Coordinación", "estado": "COMPLETADO", "subtareas": "5/10" },
+      { "proyecto": "Video tutorial para el aplicativo Programación de salones", "categoria": "Producción de contenido", "estado": "COMPLETADO", "subtareas": "0/7" },
+      { "proyecto": "Cápsulas de tecnología y difusión de aplicativos en pantallas UIFCE (Noticias UIFCE)", "categoria": "Carteleras y pantallas", "estado": "COMPLETADO", "subtareas": "0/7" },
+      { "proyecto": "Cartelera física de Apoyos Académicos (AA)", "categoria": "Articulación con Apoyos Académicos", "estado": "COMPLETADO", "subtareas": "3/6" },
+      { "proyecto": "Feria de Servicios e Innovación Tecnológica UIFCE", "categoria": "Eventos y formación", "estado": "COMPLETADO", "subtareas": "2/3" }
+    ],
+    "en_curso": [
+      { "proyecto": "Red Ejecutiva ET: alianzas estratégicas y proyectos con empresas líderes", "categoria": "Alianzas y comunidad", "estado": "EN_CURSO", "subtareas": "0/7" },
+      { "proyecto": "Microtalleres UIFCE", "categoria": "Eventos y formación", "estado": "EN_CURSO", "subtareas": "2/7" },
+      { "proyecto": "Blog UIFCE", "categoria": "Canales digitales", "estado": "POR_INICIAR", "subtareas": "0/2" },
+      { "proyecto": "Tracker de egresados UIFCE: trayectoria laboral y conexión con antiguos monitores", "categoria": "Alianzas y comunidad", "estado": "EN_CURSO", "subtareas": "4/6" }
+    ],
+    "proximo_corte": [
+      { "proyecto": "Campaña de difusión del aplicativo \"Programación de Salones\"", "categoria": "Producción de contenido", "estado": "EN_CURSO", "subtareas": "1/6" },
+      { "proyecto": "Cartelera física de Apoyos Académicos (AA)", "categoria": "Articulación con Apoyos Académicos", "estado": "COMPLETADO", "subtareas": "3/6" }
+    ]
+  },
+  "bloqueos": [
+    "Pausas operativas recurrentes causadas por el agotamiento de tokens de Claude Code."
+  ],
+  "notas": [
+    "Priorización del Excel (planeación inicial).",
+    "Microtalleres asignados: QuickBooks (2 sesiones); proyecto de estudio (1 sesión); análisis de datos financieros con IA (1 sesión); 1 sesión por confirmar.",
+    "ET · Desarrollo: rediseño y despliegue de las tarjetas del micrositio; revisar el filtro y el formato antiguo en WordPress (Proyectos de estudio).",
+    "Concurso/Hackatón: a la espera de la reunión con el director para acordar la fecha final."
+  ],
+  "antecedente_reunion_guardada": {
+    "nombre": "Reunión coordinación 3",
+    "fecha": "2026-10-23",
+    "entregados": 6,
+    "proximo_corte": ["Campaña de difusión del aplicativo \"Programación de Salones\"", "Tracker de egresados UIFCE"],
+    "bloqueos": ["Daño en el televisor entre salas (no lee las memorias)."]
+  },
+  "imagenes": [
+    "imagenes/cartelera-apoyos-academicos--vista-completa.jpg",
+    "imagenes/cartelera-apoyos-academicos--ficha-power-bi.jpg",
+    "imagenes/cursos-libres-lanzamiento-especial--portada.jpg",
+    "imagenes/cursos-libres-lanzamiento-especial--pieza-1-lanzamiento.jpg",
+    "imagenes/cursos-libres-lanzamiento-especial--pieza-2-curso-python-r.jpg",
+    "imagenes/cursos-libres-lanzamiento-especial--pieza-3-inscripciones.jpg"
+  ]
+}

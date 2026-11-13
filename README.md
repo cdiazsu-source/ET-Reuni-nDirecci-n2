@@ -22,6 +22,7 @@ Presenta: César Díaz, Máster de Estrategias Tecnológicas.
 |---|---|
 | [`presentacion/`](presentacion/) | Fuente de las diapositivas (`deck.json`, `deck.css`, `slides/*.html`) |
 | [`contexto/`](contexto/) | Mascota de la Unidad (`contexto/mascota/`) y recursos de marca tomados de [ET---NuevosLogosUIFCE-Ruletas](https://github.com/cdiazsu-source/ET---NuevosLogosUIFCE-Ruletas): logos, `areas.json` y tokens de color |
+| [`contexto/reunion-direccion-2/`](contexto/reunion-direccion-2/) | Información y material visual de la Reunión de dirección 2 (30 de octubre de 2026): [`informacion.md`](contexto/reunion-direccion-2/informacion.md), datos en JSON (`datos/`) y piezas gráficas (`imagenes/`) |
 
 ## Marca
 
