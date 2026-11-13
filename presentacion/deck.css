@@ -59,8 +59,11 @@ h2.title { font-size: 72px; font-weight: 700; line-height: 1.1; color: var(--nav
 .cover-meta .who { font-size: 32px; font-weight: 700; color: #FAFAFD; }
 .cover-meta .role { font-size: 24px; color: var(--lavanda); }
 .cover-meta .when { font-size: 24px; color: var(--lavanda); text-align: right; }
-.dot { position: absolute; left: 1560px; top: 300px; width: 240px; height: 240px; background: var(--amarillo); }
-.halo { position: absolute; left: 1320px; top: 120px; width: 600px; height: 600px; background: #49689F; opacity: 0.25; }
+.halo { position: absolute; left: 1180px; top: 170px; width: 620px; height: 620px; background: #49689F; opacity: 0.25; }
+.mascot-cover { position: absolute; left: 1110px; top: 210px; width: 680px; height: 554px; object-fit: contain; }
+.mascot-statement { position: absolute; left: 1232px; top: 312px; width: 560px; height: 456px; object-fit: contain; }
+.pop { animation: pop 900ms cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: 360ms; }
+@keyframes pop { from { opacity: 0; transform: translateY(48px) rotate(-4deg); } to { opacity: 1; transform: translateY(0) rotate(0deg); } }
 
 /* agenda */
 .timeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; flex: 1; }
@@ -103,7 +106,7 @@ h2.title { font-size: 72px; font-weight: 700; line-height: 1.1; color: var(--nav
 .statement { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 32px; }
 .statement .eyebrow { color: var(--navy-2); }
 .statement h1 { font-size: 120px; font-weight: 900; line-height: 1.02; color: var(--navy-2); letter-spacing: -2px; }
-.statement .sub { font-size: 44px; color: var(--navy-2); width: 1200px; line-height: 1.25; }
+.statement .sub { font-size: 44px; color: var(--navy-2); width: 1040px; line-height: 1.25; }
 
 /* kanban de estudio */
 .lanes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }

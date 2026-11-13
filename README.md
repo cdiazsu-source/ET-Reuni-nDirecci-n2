@@ -21,7 +21,7 @@ Presenta: César Díaz, Máster de Estrategias Tecnológicas.
 | Carpeta | Qué hay |
 |---|---|
 | [`presentacion/`](presentacion/) | Fuente de las diapositivas (`deck.json`, `deck.css`, `slides/*.html`) |
-| [`contexto/`](contexto/) | Recursos de marca tomados de [ET---NuevosLogosUIFCE-Ruletas](https://github.com/cdiazsu-source/ET---NuevosLogosUIFCE-Ruletas): logos, `areas.json` y tokens de color |
+| [`contexto/`](contexto/) | Mascota de la Unidad (`contexto/mascota/`) y recursos de marca tomados de [ET---NuevosLogosUIFCE-Ruletas](https://github.com/cdiazsu-source/ET---NuevosLogosUIFCE-Ruletas): logos, `areas.json` y tokens de color |
 
 ## Marca
 
